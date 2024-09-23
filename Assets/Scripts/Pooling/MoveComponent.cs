@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class MoveComponent : MonoBehaviour
 {
@@ -12,21 +13,27 @@ public class MoveComponent : MonoBehaviour
 
     void Start()
     {
-
+        
     }
 
     void Update()
     {
-        transform.position += -transform.forward * speed * Time.deltaTime;
+        transform.position += -Vector3.forward * speed * Time.deltaTime;
 
-        if (transform.position.z <= objectDistance && transform.tag == "Obstacle" && canSpawnObject)
+        if (transform.position.z <= objectDistance && canSpawnObject)
         {
-            ObstacleSpawner.instance.SpawnObstacle();
-            canSpawnObject = false;
-        }
-        if (transform.position.z <= objectDistance && transform.tag == "Floor" && canSpawnObject)
-        {
-            FloorSpawner.instance.SpawnFloor();
+            switch (transform.tag)
+            {
+                case "ObstacleSection":
+                    ObstacleSectionSpawner.instance.SpawnObstacleSection();
+                    break;
+                case "Floor":
+                    FloorSpawner.instance.SpawnFloor();
+                    break;
+                case "Coin":
+                    CoinSpanwer.instance.SpawnCoin();
+                    break;
+            }          
             canSpawnObject = false;
         }
         if (transform.position.z <= despawnDistance)
@@ -35,5 +42,6 @@ public class MoveComponent : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
 
 }

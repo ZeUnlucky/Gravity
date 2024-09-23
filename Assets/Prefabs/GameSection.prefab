@@ -164,7 +164,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 50}
+  m_LocalScale: {x: 1, y: 1, z: 75}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3607651607477963917}
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  objectDistance: 0
+  objectDistance: 25
   despawnDistance: -25
 --- !u!1 &4974452703098754855
 GameObject:
@@ -1226,6 +1226,11 @@ PrefabInstance:
       propertyPath: RightTile
       value: 
       objectReference: {fileID: 7224541475374436365}
+    - target: {fileID: 5399670473712120803, guid: db0ddbc15b36a4448b16d5f468331f9b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c80269852a3b664b8514d2b8c7f98cb, type: 2}
     - target: {fileID: 6164224605765278566, guid: db0ddbc15b36a4448b16d5f468331f9b,
         type: 3}
       propertyPath: m_Name
@@ -1316,6 +1321,11 @@ PrefabInstance:
       propertyPath: RightTile
       value: 
       objectReference: {fileID: 3319427423328637490}
+    - target: {fileID: 5399670473712120803, guid: db0ddbc15b36a4448b16d5f468331f9b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c80269852a3b664b8514d2b8c7f98cb, type: 2}
     - target: {fileID: 6164224605765278566, guid: db0ddbc15b36a4448b16d5f468331f9b,
         type: 3}
       propertyPath: m_Name
@@ -1406,6 +1416,11 @@ PrefabInstance:
       propertyPath: RightTile
       value: 
       objectReference: {fileID: 6624428593406268877}
+    - target: {fileID: 5399670473712120803, guid: db0ddbc15b36a4448b16d5f468331f9b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c80269852a3b664b8514d2b8c7f98cb, type: 2}
     - target: {fileID: 6164224605765278566, guid: db0ddbc15b36a4448b16d5f468331f9b,
         type: 3}
       propertyPath: m_Name
@@ -1496,6 +1511,11 @@ PrefabInstance:
       propertyPath: RightTile
       value: 
       objectReference: {fileID: 6576613696530716774}
+    - target: {fileID: 5399670473712120803, guid: db0ddbc15b36a4448b16d5f468331f9b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c80269852a3b664b8514d2b8c7f98cb, type: 2}
     - target: {fileID: 6164224605765278566, guid: db0ddbc15b36a4448b16d5f468331f9b,
         type: 3}
       propertyPath: m_Name
@@ -1586,6 +1606,11 @@ PrefabInstance:
       propertyPath: RightTile
       value: 
       objectReference: {fileID: 5537490800636075948}
+    - target: {fileID: 5399670473712120803, guid: db0ddbc15b36a4448b16d5f468331f9b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c80269852a3b664b8514d2b8c7f98cb, type: 2}
     - target: {fileID: 6164224605765278566, guid: db0ddbc15b36a4448b16d5f468331f9b,
         type: 3}
       propertyPath: m_Name
@@ -1676,6 +1701,11 @@ PrefabInstance:
       propertyPath: RightTile
       value: 
       objectReference: {fileID: 3721462283845611706}
+    - target: {fileID: 5399670473712120803, guid: db0ddbc15b36a4448b16d5f468331f9b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c80269852a3b664b8514d2b8c7f98cb, type: 2}
     - target: {fileID: 6164224605765278566, guid: db0ddbc15b36a4448b16d5f468331f9b,
         type: 3}
       propertyPath: m_Name
