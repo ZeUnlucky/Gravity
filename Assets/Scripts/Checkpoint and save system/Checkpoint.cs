@@ -15,8 +15,7 @@ public class Checkpoint : MonoBehaviour
         {
             Vector3 playerPosition= other.transform.position;
             GameData data= new GameData(playerPosition, PlayerScore, CollectedItems);
-
-            SaveSystem.SaveGame(data, DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));  // Save with timestamp
+            SaveSystem.SaveGame(data, DateTime.Now.ToString("yyyy-MM-dd_HH-mm"));  // Save with timestamp
             Debug.Log("Game Saved at checkpoint");
         }
     }

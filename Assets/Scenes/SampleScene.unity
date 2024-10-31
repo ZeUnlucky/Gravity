@@ -1401,7 +1401,7 @@ PrefabInstance:
     - target: {fileID: 3393782782591691329, guid: 93e41485c3967104ba59058732b1542f,
         type: 3}
       propertyPath: despawnDistance
-      value: -55
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 4457987549311109528, guid: 93e41485c3967104ba59058732b1542f,
         type: 3}

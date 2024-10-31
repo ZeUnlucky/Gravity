@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameSavesPanel : MonoBehaviour
@@ -31,7 +33,7 @@ public class GameSavesPanel : MonoBehaviour
         foreach (FileInfo file in files)
         {
             GameObject button = Instantiate(ButtonPrefab, ContentPanel);
-            button.GetComponentInChildren<Text>().text = file.Name;
+            button.GetComponentInChildren<TMP_Text>().text = file.Name;
             button.transform.SetParent(scrollView.transform, false);
             Button btn = button.GetComponent<Button>();
             string FilePath = file.FullName;
@@ -43,7 +45,7 @@ public class GameSavesPanel : MonoBehaviour
     void LoadSelectedGame(string filePath)
     {
         GameData data = SaveSystem.LoadGame(filePath);
-
+        SceneManager.LoadScene("SampleScene");
         if (data != null)
         {
             GameObject player = GameObject.FindWithTag("Player");

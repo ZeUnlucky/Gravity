@@ -8,9 +8,19 @@ public static class SaveSystem
 {
     public static void SaveGame(GameData data, string fileName)
     {
+        if (!Directory.Exists(Application.persistentDataPath))
+        {
+            Directory.CreateDirectory(Application.persistentDataPath);
+        }
         string savePath = Application.persistentDataPath + "/" + fileName + ".dat";
         string json = JsonUtility.ToJson(data);
+        if (!File.Exists(savePath))
+        {
+            File.Create(savePath).Close();
+        }
+        
         File.WriteAllText(savePath, json);
+        
     }
 
     public static GameData LoadGame(string savePath)
